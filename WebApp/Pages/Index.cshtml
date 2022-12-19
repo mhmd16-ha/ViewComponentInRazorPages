@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@{ 
+    var d = new Dictionary<string, string>
+    {
+        {"Key1","Value1" },
+        {"Key2","Value2" },
+
+    };
+}
+
+<div class="text-center">
+    <a asp-all-route-data="d">Click Here</a>
+    <cache enabled="DateTime.Now.DayOfWeek !=DayOfWeek.Friday">@DateTime.Now</cache>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
