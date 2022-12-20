@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebApp.Services
 {
-    interface IUserService
+   public interface IUserService
     {
          Task<List<User>> Get_Users_Async();
          Task<User> Get_User_Async(int id);

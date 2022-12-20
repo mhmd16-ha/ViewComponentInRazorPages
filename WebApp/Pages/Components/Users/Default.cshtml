@@ -1,0 +1,7 @@
+﻿@model List<WebApp.User>
+    <h2>Show ALL uSER</h2>
+<ul>
+   @foreach(var item in Model){
+    <li>@item.Name @item.Phone</li>
+    }
+</ul>
